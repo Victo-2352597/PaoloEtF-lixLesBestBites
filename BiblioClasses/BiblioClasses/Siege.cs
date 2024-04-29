@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BiblioClasses
 {
-    internal class Siege
+    public class Siege
     {
+        // Attribut
+        private Passagers _passager;
     }
 }
