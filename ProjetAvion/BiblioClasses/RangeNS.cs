@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace BiblioClasses
 {
-    public class Siege
+    public class RangeNS 
     {
-        // Attribut
-        private Passagers _passager;
+        public RangeNS() 
+        {
+           
+
+        }
     }
 }

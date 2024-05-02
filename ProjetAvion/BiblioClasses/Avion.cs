@@ -14,16 +14,26 @@ namespace BiblioClasses
         private Passagers[] _agentsBords;
 
         // 
+        private int _nbRange;
         private int _nbSiege;
 
-        public Avion(int nbSiege)
+        public Avion(int nbRange, int nbSiege)
         {
             _nbSiege = nbSiege;
+            _nbRange = nbRange;
+
+            CreationAvion(nbRange, nbSiege);
         }
 
-        public void AjouterPassager(string nomPassager, DateTime dateNaissance, bool passeport)
+        public void CreationAvion(int nbRange, int nbSiege)
         {
-            Passagers nouveauPassager = new Passagers(nomPassager, dateNaissance, passeport);
+            for (int i = 1; i <= nbRange; i++)
+            {
+                for (int j = 1; j <= 6; j++)
+                {
+                    Siege nomSiege = new Siege("Pauvre", $"{i}|{j}");
+                }
+            }
         }
     }
 }

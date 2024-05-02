@@ -18,7 +18,6 @@ namespace BiblioClasses
         private string _paysDestination;
 
         // Informations du siège
-        private string _nomSiege;
         private string _coSiege;
 
         public Passagers(string nomPassager, DateTime dateNaissance, bool passeport)
@@ -26,6 +25,11 @@ namespace BiblioClasses
             _nomPassager = nomPassager ?? throw new ArgumentNullException(nameof(nomPassager));
             _dateNaissance = dateNaissance;
             _passeport = passeport;
+        }
+
+        public void AjouterPassager(string nomPassager, DateTime dateNaissance, bool passeport)
+        {
+            Passagers nouveauPassager = new Passagers(nomPassager, dateNaissance, passeport);
         }
     }
 }
